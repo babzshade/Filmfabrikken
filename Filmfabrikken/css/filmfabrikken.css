@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+/* grid-container til forsiden */
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/* header til alle siderne */
+.header {
+    background-color: black;
+    color: white;
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+/* overskrift tekst i headeren */
+h1 {
+    text-align: center;
+}
+
+/* navbar til alle sider */
+.navbar {
+    background-color: red;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* tekst-farve på links i navbar */
+a {
+    color: white;
+}
+
+/* artikel 1 til forsiden */
+.article1 {
+    background-color: yellowgreen;
+    grid-column: 1/5;
+    grid-row: 5/6;
+    text-align: left;
+}
+
+
+/* artikel 2 til forsiden */
+.article2 {
+    background-color: deeppink;
+    grid-column: 1/5;
+    grid-row: 6/7;
+    text-align: center;
+}
+
+/* artikel 3 til forside */
+.article3 {
+    background-color: goldenrod;
+    grid-column: 1/5;
+    grid-row: 7/8;
+    text-align: center;
+}
+
+/* Footer til alle sider */
+.footer {
+    background-color: black;
+    color: white;
+    grid-column: 1/5;
+    grid-row: 8/9;
+    text-align: left;
+}
+
+/* styling a links i navbar */
+a:link {
+    text-decoration: none;
+    font-size: x-large;
+    margin: 70px;
+}
+
+a:active {
+    background-color: black;
+}
+
+
+
+/* Dette er CSS til Video-slide */
+
+.mySlides img {
+     width: 100%;
+     height: 300px;
+ }
+
+
+/* Slideshow container på forsiden */
+.slideshow-container {
+    grid-column: 1/5;
+    grid-row: 4/4;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: red;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Videoslide slut */
+
+/* til projektsiden */
+
+.projekt1 {
+    background-color: blue;
+}
+
+.projekt2 {
+    background-color: green;
+}
+
+.projekt3 {
+    background-color: deepskyblue;
+}
+
+
+
+/* media query */
+@media only screen and (max-width: 475px) {
+
+    body {
+        background-color: grey;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
